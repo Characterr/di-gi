@@ -1,27 +1,43 @@
 :root {
     --color-main: #2B4074;
     --color-light: #FFFFFF;
+    --speed-transition: 0.5s;
 }
-html{
-}
-h1,h2,h3,h4,h5,h6,p {
+
+html {}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     min-width: 100%;
     padding-bottom: 50px;
+    background: #fff;
 }
+
+section {
+    width: 100%;
+}
+
 .wrapper {
     margin: 0 auto;
     max-width: 1440px;
     height: 100%;
     border: 1px solid rgb(109, 109, 109);
 }
-.br{
+
+.br {
     border: 1px solid rgb(206, 115, 183);
 }
 
@@ -136,30 +152,34 @@ header {
     height: 10px;
     border-radius: 50%;
     background-color: #FFFFFF;
-    border: 1px solid  #FFFFFF;
+    border: 1px solid #FFFFFF;
     display: inline-block;
     margin: 0 5px;
 }
-.active{
+
+.active {
     background: none;
 }
 
 .arrow {
     position: absolute;
-    right:  0;
-    top: calc(50% - 71px); 
+    right: 0;
+    top: calc(50% - 71px);
 }
-.arrow>*{
+
+.arrow>* {
     height: 70px;
     width: 70px;
     line-height: 70px;
     background-color: var(--color-main);
-    margin-bottom: 1px; 
+    margin-bottom: 1px;
     display: block;
 }
-.forvard{
+
+.forvard {
     background-color: #F9F6E5;
 }
+
 .back::after {
     content: "";
     height: 18px;
@@ -171,7 +191,7 @@ header {
     position: relative;
     left: 4px;
     transform: rotate(-45deg);
-} 
+}
 
 .forvard::after {
     content: "";
@@ -190,95 +210,217 @@ header {
 
 
 
-.promo{
+.promo {
     height: 92px;
-     background: var(--color-main);
+    background: var(--color-main);
     width: 100%;
-     font-family: Roboto;
-     font-weight: 500;
-     color:var(--color-light);
-     padding: 57px 0 57px 0;
-     font-size: 24px;
-     letter-spacing: 0px;
+    font-family: Roboto;
+    font-weight: 500;
+    color: var(--color-light);
+    padding: 57px 0 57px 0;
+    font-size: 24px;
+    letter-spacing: 0px;
 }
-.flex{
+
+.flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.promo-info{
+.promo-info {
     width: 700px;
     margin-left: 150px;
 }
 
-h3{
-line-height: 32px;
-font-weight: 500;
-font-size: 24px;
-margin-bottom: 10px;
-letter-spacing: 0px;
-text-indent: 0;
+h3 {
+    line-height: 32px;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 10px;
+    letter-spacing: 0px;
+    text-indent: 0;
 }
 
-.promo>.wrapper>p{
-font-family: Dosis;
-font-size: 16px;
-font-weight: 300;
-line-height: 18px;
+.promo>.wrapper>p {
+    font-family: Dosis;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
 }
-.call-me-back{
-font-family: Roboto;
-font-size: 18px;
-font-weight: 800;
-line-height: 18px;
-text-align: center;
-margin-right: 135px;
-background-color: #F9F6E5;
-border-radius: 5%;
-color: var(--color-main);
-padding: 18px 5px;
-text-transform: uppercase;
+
+.call-me-back {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 18px;
+    text-align: center;
+    margin-right: 135px;
+    background-color: #F9F6E5;
+    border-radius: 5%;
+    color: var(--color-main);
+    padding: 18px 5px;
+    text-transform: uppercase;
 }
 
 /*################################ services #############################*/
-.services {
+
+.flex-item{
+    display: flex;
+    justify-content: space-between;
 }
 .content-wrapper {
-height: 300px;
+    padding-left: 62px;
+    box-sizing: border-box;
+    width: 40%;
+    background: #fff;
+
+    position: relative;
+    z-index: 1;
 }
 
-h2{
-font-family: Roboto Condensed;
-font-size: 48px;
-font-weight: 400;
-line-height: 56px;
-color: var(--color-main);
-text-align: left;
+h2 {
+    font-family: Roboto Condensed;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    color: var(--color-main);
 }
 
-.services h2{
-margin: 90px 0 76px 62px;
+.services h2 {
+    margin-top: 90px;
+    margin-bottom: 76px;
+}
+
+h3 {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+}
+
+.services h3 {
+    max-width: 470px;
+    margin-bottom: 31px;
 }
 
 .line {
+    width: 99px;
+    height: 8px;
+    background: var(--color-main);
+    margin-bottom: 35px;
+}
+
+.content-wrapper p {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 134px;
 }
 
 .items {
-    float: right;
+    /* width: 1039px;  */
+    width: 924px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+
+    position: relative;
+    z-index: 0;
 }
+
 .item {
+
+    width: calc(100% / 4);
+    height: 266px;
+     border: 1px solid  #F9F6E5; 
+    padding-top: 79px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Roboto Condensed;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+      background: #fff; 
+      box-sizing: border-box;
+
+     
+
+                                          
+                         
+ transition: var(--speed-transition);
 }
+
+
+.item:hover {
+    outline: 4px solid var(--color-main);
+    outline-offset: -17px;
+    padding-top: 42px;
+    padding-bottom: 37px;
+
+    z-index: -1;
+}
+
 .object {
+    margin-bottom: 28px;
+    transition: margin var(--speed-transition);
 }
+.item:hover  .object {
+    margin-bottom: 15px;
+}
+
+
 .name {
+    margin-bottom: 22px;
 }
+
 .description {
+    margin-bottom: 0;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 18px;
+    color: #9B9B9B;
+    letter-spacing: 0;
+    text-transform: none;
+    font-size: 0;
+
+    transition: font-size var(--speed-transition);
+}
+.item:hover .description {
+    font-size: 16px;
+    margin-bottom: 18px;
 }
 
+.item a {
+    text-decoration: none;
+    line-height: 18.75px;
+    color: var(--color-main);
 
+    position: relative;
+     right: 100%;
+     z-index: -5;
 
+     transition: right var(--speed-transition);
+}
+.item:hover a{
+    right: 0%;
+}
 
+/*######################################### projects  #########################*/
+.projects{
+    height: 100px;
+    background: #fff;
+    z-index: 1;
+    border: none;
+}
 
 
 
