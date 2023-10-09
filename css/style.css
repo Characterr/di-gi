@@ -2,8 +2,18 @@
     --color-main: #2B4074;
     --color-light: #FFFFFF;
     --color-text-color: #4A4A4A;
+    --color-p: #797979;
+
 
     --speed-transition: 0.5s;
+}
+
+.button-dark {
+    background-color: var(--color-main);
+    color: #F9F6E5;
+    border-radius: 3%;
+    border: none;
+    text-transform: uppercase;
 }
 
 
@@ -17,7 +27,8 @@ p {
     padding: 0;
     margin: 0;
 }
-h4{
+
+h4 {
     text-align: center;
     font-size: 16px;
     line-height: 19px;
@@ -138,13 +149,8 @@ header {
     margin: 0 auto;
 }
 
-.more {
-    background-color: var(--color-main);
-    color: #F9F6E5;
+.intro-button{
     padding: 16px 42px;
-    border-radius: 6%;
-    border: none;
-    text-transform: uppercase;
     margin-bottom: 123px;
     position: relative;
     z-index: 1;
@@ -215,19 +221,20 @@ header {
 }
 
 
+/* ################################# promo   ################################ */
 .promo {
-    height: 92px;
+    min-height: 92px;
     background: var(--color-main);
     width: 100%;
     font-family: Roboto;
     font-weight: 500;
     color: var(--color-light);
-    padding: 57px 0 57px 0;
     font-size: 24px;
     letter-spacing: 0px;
 }
 
-.flex {
+.promo-wrap {
+    padding: 57px 0 57px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -238,7 +245,7 @@ header {
     margin-left: 150px;
 }
 
-h3 {
+ .promo h3 {
     line-height: 32px;
     font-weight: 500;
     font-size: 24px;
@@ -247,14 +254,16 @@ h3 {
     text-indent: 0;
 }
 
-.promo>.wrapper>p {
+.promo>.wrapper p{
     font-family: Dosis;
     font-size: 16px;
     font-weight: 300;
     line-height: 18px;
+    max-width: 453px;
+    letter-spacing: 0.9px;
 }
 
-.call-me-back {
+.promo button {
     font-family: Roboto;
     font-size: 18px;
     font-weight: 800;
@@ -270,10 +279,11 @@ h3 {
 
 /*################################ services #############################*/
 
-.flex-item{
+.flex-item {
     display: flex;
     justify-content: space-between;
 }
+
 .content-wrapper {
     padding-left: 62px;
     box-sizing: border-box;
@@ -289,12 +299,13 @@ h2 {
     font-size: 48px;
     font-weight: 400;
     line-height: 56px;
-    color: var(--color-main);
+    color: var(--color-text-color);
 }
 
 .services h2 {
     margin-top: 90px;
     margin-bottom: 76px;
+    color: var(--color-main);
 }
 
 h3 {
@@ -308,6 +319,7 @@ h3 {
 .services h3 {
     max-width: 470px;
     margin-bottom: 31px;
+    color: var(--color-text-color);
 }
 
 .line {
@@ -317,12 +329,17 @@ h3 {
     margin-bottom: 35px;
 }
 
-.content-wrapper p {
+.description {
+    margin-bottom: 0;
     font-family: Roboto;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-    margin-bottom: 134px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #9B9B9B;
+    letter-spacing: 0;
+    text-transform: none;
+    font-size: 0;
+
+    transition: font-size var(--speed-transition);
 }
 
 .items {
@@ -343,7 +360,7 @@ h3 {
 .item {
     width: calc(100% / 4);
     height: 266px;
-     border: 1px solid  #F9F6E5; 
+    border: 1px solid #F9F6E5;
     padding-top: 79px;
     text-align: center;
 
@@ -354,11 +371,11 @@ h3 {
 
     text-transform: uppercase;
     position: relative;
-      background: #fff; 
-      box-sizing: border-box;
+    background: #fff;
+    box-sizing: border-box;
 
-    
- transition: var(--speed-transition);
+
+    transition: var(--speed-transition);
 }
 
 
@@ -375,11 +392,12 @@ h3 {
     margin-bottom: 28px;
     transition: margin var(--speed-transition);
 }
-.item:hover  .object {
+
+.item:hover .object {
     margin-bottom: 15px;
 }
 
-.services h4{
+.services h4 {
     margin-bottom: 22px;
     color: var(--color-text-color);
 }
@@ -396,6 +414,7 @@ h3 {
 
     transition: font-size var(--speed-transition);
 }
+
 .item:hover .description {
     font-size: 16px;
     margin-bottom: 18px;
@@ -408,81 +427,90 @@ h3 {
     cursor: pointer;
 
     position: relative;
-     right: 100%;
-     z-index: -5;
+    right: 100%;
+    z-index: -5;
 
-     transition: right var(--speed-transition);
+    transition: right var(--speed-transition);
 }
-.item:hover a{
+
+.item:hover a {
     right: 0%;
 }
 
 /*######################################### projects  #########################*/
-.projects{
+.projects {
     height: 618px;
     background: rgba(43, 64, 116, 0.5);
-   background: linear-gradient(#2B4074,#fff); 
-   text-align: center; 
-   z-index: 1;
+    background: linear-gradient(#2B4074, #fff);
+    text-align: center;
+    z-index: 1;
 }
-.projects h2{
+
+.projects h2 {
     color: var(--color-light);
     margin-top: 84px;
     margin-bottom: 24px;
 }
-.projects .line{
+
+.projects .line {
     background: var(--color-light);
-    margin: 0  auto 80px;
+    margin: 0 auto 80px;
 }
-.project-items {
- 
-}
+
+.project-items {}
+
 .project {
     text-align: center;
-    display: inline-block; 
+    display: inline-block;
 }
-.project:hover .project-info{
+
+.project:hover .project-info {
     background: rgba(249, 246, 229, 0.83);
 
     transition: background-color var(--speed-transition);
 }
-.project:hover button{
+
+.project:hover button {
     opacity: 1;
 }
 
 .wrap-project {
-     background:  center / cover  no-repeat; 
+    background: center / cover no-repeat;
     width: 268px;
     height: 239px;
     margin: 0 12px 29px;
     border-radius: 5%;
     position: relative;
-    
+
 
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 
 }
 
-.project:nth-child(1)>.wrap-project{
-    background-image: url("../images/lalique.jpg"); 
+.project:nth-child(1)>.wrap-project {
+    background-image: url("../images/lalique.jpg");
 }
-.project:nth-child(2)>.wrap-project{
-    background-image: url("../images/construction-houses.jpg"); 
+
+.project:nth-child(2)>.wrap-project {
+    background-image: url("../images/construction-houses.jpg");
 }
-.project:nth-child(3)>.wrap-project{
-    background-image: url("../images/cafe.jpg"); 
+
+.project:nth-child(3)>.wrap-project {
+    background-image: url("../images/cafe.jpg");
 }
-.project:nth-child(4)>.wrap-project{
-    background-image: url("../images/unique-tours.jpg"); 
+
+.project:nth-child(4)>.wrap-project {
+    background-image: url("../images/unique-tours.jpg");
 }
 
 
-.project img{
+.project img {
     width: 100%;
     height: 100%;
 }
+
 .project-info {
     height: calc(100% - 22px);
     width: calc(100% - 22px);
@@ -494,39 +522,112 @@ h3 {
 }
 
 .info {
- background: url("../images/info button.png") center/ cover no-repeat; 
- width: 32px;
- height: 32px;
- margin-right: 11px;
+    background: url("../images/info button.png") center/ cover no-repeat;
+    width: 32px;
+    height: 32px;
+    margin-right: 11px;
 }
+
 .increase {
- background: url("../images/search.png") center  / cover no-repeat; 
- width: 32px;
- height: 32px;
- margin-top: 6px;
+    background: url("../images/search.png") center / cover no-repeat;
+    width: 32px;
+    height: 32px;
+    margin-top: 6px;
 }
-.project button{
-    border:  none;
-    opacity: 0; 
+
+.project button {
+    border: none;
+    opacity: 0;
     transition: font-size 0.2s;
 
 }
-.project button:hover{
-    font-size: 22px; 
+
+.project button:hover {
+    font-size: 22px;
     width: 2em;
-    height: 2em; 
+    height: 2em;
     opacity: 1;
 }
-button:hover{
+
+button:hover {
     cursor: pointer;
 }
 
-
-.project h4{
-
-    color:var(--color-main);
+.project h4 {
+    color: var(--color-main);
 }
 
 
 
 
+/* ##############################   team  ############################### */
+
+.team {
+    border: 1px solid #212121;
+}
+
+.wrapper {}
+
+.team-wrap {
+    padding: 80px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrap-foto {
+    width: 460px;
+    height: 420px;
+    background-repeat: 50%;
+     margin-right: 100px; 
+}
+
+.content {
+    width: 730px;
+}
+
+.team h2{
+    margin-top: -5px;
+    padding-bottom: 30px;
+    color: var(--color-text-color);
+}
+
+.team .line {
+    margin-bottom: 39px;
+}
+
+.team p {
+     max-width: 507px;
+    color: #9B9B9B;
+    font-family: Roboto;
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: left;
+margin-bottom: 0;
+}  
+
+.team-button {
+    margin-top: 39px;
+    padding: 21px 35px;
+}
+
+/* ############################# news  ########################################### */
+.news{
+     background: #F9F6E5;
+     text-align: center;
+}
+.news-wrap {
+    padding-top: 52px;
+}
+.news .line {
+    margin: 19px auto 115px;
+}
+.news-content {
+    height: 714px;
+    width: 1153px;
+    border: 1px solid red;
+    
+
+    margin: 0 auto 80px;
+}
