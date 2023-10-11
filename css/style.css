@@ -961,7 +961,7 @@ footer address {
      animation: up 0.8s infinite; 
 }
 
-@keyframes up {
+@keyframes up {  
     from {bottom: 0;}
     to {top: -60px;} 
   }
