@@ -1,0 +1,65 @@
+.team {
+   background: var(--color-light);
+}
+
+
+
+.team-wrap {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.wrap-foto {
+   max-width: 460px;
+  height: auto;
+  float: left;
+  margin-right: 90px;
+}
+
+.content {
+   float: left;
+}
+
+.team h2 {
+   margin-top: -5px;
+   padding-bottom: 30px;
+}
+
+.team .line {
+   margin-bottom: 39px;
+}
+
+.team p {
+   max-width: 507px;
+   color: #9B9B9B;
+   margin-bottom: 0;
+}
+
+.team-button {
+   margin-top: 39px;
+   padding: 21px 35px;
+}
+
+
+/* 1024_  46-42
+   768_  44-41
+   630_  40-30
+   320_  20-20  */
+
+   @media (max-width:1024px) {
+   
+   
+}
+
+@media (max-width:768px) {
+  
+}
+
+@media (max-width:640px) {
+  
+}
+
+@media (max-width:320px) {
+
+}
+
