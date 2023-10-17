@@ -1,0 +1,127 @@
+.testimonial {
+   font-family: Roboto Condensed;
+   font-weight: 700;
+   text-align: center;
+   color: #4A4A4A;
+}
+  .testimonial .wrapper{
+   padding: 0;
+  }
+
+.quotes {
+   width: 32px;
+   height: 27px;
+   background: url("../images/quotes.png") center/ cover no-repeat;
+   margin: 110px auto 30px;
+}
+
+.quote {
+   font-size: 36px;
+   font-weight: 400;
+   line-height: 42px;
+   display: block;
+   max-width: 840px;
+   margin: 0 auto 30px;
+}
+
+q::after,
+q::before {
+   display: none;
+}
+
+.digital {
+   color: var(--color-main);
+   font-weight: 700;
+}
+
+.author {
+   font-size: 24px;
+   line-height: 28px;
+   letter-spacing: 2px;
+   margin: 0 0 80px;
+}
+
+.testimonial .pagination {
+   margin-bottom: 127px;
+}
+
+.testimonial .oval {
+   background-color: var(--color-main);
+   border: 1px solid var(--color-main);
+}
+
+.testimonial .active {
+   background: var(--color-light);
+   border-color: #476E4D;
+}
+
+@media (max-width:1024px) {
+   .testimonial .wrapper{
+      padding: 0 41px;
+   }
+   .quotes {
+      margin-bottom: 40px;
+   }
+   .quote {
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 45px;
+   }
+   .author {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 80px;
+   }
+   .testimonial .pagination {
+      margin-bottom: 131px;
+   }
+}
+
+@media (max-width:768px) {
+   .testimonial .wrapper{
+      padding: 0 25px;
+   }
+   .quotes {
+      margin-top: 60px;
+      margin-bottom: 80px;
+   }
+   .quote {
+      margin-bottom: 40px;
+      letter-spacing: -1px;
+   }
+   .author {
+      margin-bottom: 40px;
+   }
+   .testimonial .pagination {
+      margin-bottom: 86px;
+   }
+}
+
+@media (max-width:640px) {
+   .quotes {
+      margin-bottom: 40px;
+   }
+   .quote{
+      letter-spacing: 0;
+      max-width: 413px;
+      text-align: cenjter;
+   }
+   .quote::first-letter{
+      margin-left: 40px;
+   }
+}
+
+@media (max-width:320px) {
+   .quotes {
+      margin-bottom: 90px;
+   }
+   .quote {
+      margin-bottom: 90px;
+      font-size: 24px;
+      line-height: 28px;
+      max-width: 294px;
+   }
+   .quote::first-letter{
+      margin: 0;
+   }
+}
