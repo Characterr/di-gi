@@ -3,6 +3,7 @@
 }
 .team-wrap{
    display: flex;
+   margin-left: 150px;
 }
 
 .wrap-foto {
@@ -35,8 +36,11 @@
 
 
 @media (max-width:1024px) {
+    .team-wrap{
+      margin-left: 40px;
+   }
   .wrap-foto{
-      width: 395px;
+      max-width: 395px;
       height: 100%;
        margin-right: 60px; 
       margin-top: 80px;
@@ -46,7 +50,7 @@
       height: 100%;
    }
    .content{
-      margin-right: -40px;
+     
    }
    .team h2 {
       font-size: 36px;
@@ -73,7 +77,7 @@
 
 @media (max-width:768px) {
    .wrap-foto{
-      width: 240px;
+      max-width: 240px;
       height: 100%;
       margin-right: 34px;
       margin-top: 40px;
@@ -105,7 +109,7 @@
    .team-wrap{
       flex-direction: column;
       text-align: center;
-      padding: 0 61px;
+      margin: 0 61px;
    }
    .wrap-foto{
       margin: 46px 0 40px;
@@ -136,7 +140,7 @@
 
 @media (max-width:320px) {
    .team-wrap{
-      padding: 0 20px;
+      margin: 0 20px;
    }
    .wrap-foto{
       margin-top: 17px;

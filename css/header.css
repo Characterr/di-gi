@@ -1,7 +1,13 @@
+
 header {
     box-sizing: border-box;
     background-color: var(--color-main);
     width: 100%;
+}
+
+header .wrapper{
+    padding-left:  150px;
+    padding-right: 135px; 
 }
 
 .group {
@@ -51,69 +57,54 @@ header {
 }
 
 @media (max-width:1024px) {
-
-    .wrapper {
+    .header .wrapper {
         padding-left: 46px;
         padding-right: 42px;
     }
-
     .group {
         margin: 17px 0;
     }
-
     .menu {
         margin-top: 30px;
     }
 }
 
 @media (max-width:768px) {
-    .wrapper {
+    header .wrapper {
         padding-left: 44px;
         padding-right: 41px;
-
     }
-
     .group {
         margin: 17px 0;
     }
-
     .menu {
         margin-top: 30px;
     }
 }
 
 @media (max-width:640px) {
-    .wrapper {
+    header .wrapper {
         padding-left: 40px;
         padding-right: 30px;
     }
-
     .group {
         margin: 17px 0;
     }
-
     .menu {
         margin-top: 30px;
     }
 }
 
 @media (max-width:320px) {
-
-    body {
-        min-width: 320px;
-    }
-
-    .wrapper {
+    
+    header .wrapper {
         padding-left: 20px;
         padding-right: 20px;
     }
-
     .group {
         margin: 7px 5px 7px 5px;
     }
-
     .menu {
         margin-top: 20px;
     }
-
 }

@@ -1,5 +1,5 @@
 .intro {
-    min-width: 100%;
+    max-width: 100%;
     background: url("../images/bg-img.jpg") no-repeat center center;
     background-size: cover;
     text-align: center;
@@ -218,9 +218,6 @@
 }
 
 @media (max-width:480px) {
-    body {
-        min-width: 480px;
-    }
     .arrow {
         display: none;
     }
@@ -237,5 +234,23 @@
     }
     .arrow {
         display: none;
+    }
+
+
+
+
+
+    @media (max-width:200px) {
+        .intro {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        input{
+            font-size: 10px;
+        }
+        .wrapper{
+            padding: 0;
+            margin:0;
+        }
     }
 }
