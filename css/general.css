@@ -102,6 +102,17 @@ input{
 
 
 
+@media (max-width:243px) {
+    .promo button, .team-button{ 
+        font-size: 0.7em !important;
+    }
+    h2 {
+        font-size: 44px;
+    }
+}
+
+
+
 
 
 
