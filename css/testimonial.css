@@ -1,5 +1,5 @@
 .testimonial {
-   font-family: Roboto Condensed;
+   font-family: "Roboto Condensed";
    font-weight: 700;
    text-align: center;
    color: #4A4A4A;
@@ -118,7 +118,6 @@ q::before {
    .quote {
       letter-spacing: 0;
       max-width: 413px;
-      text-align: cenjter;
    }
 
    .quote::first-letter {
