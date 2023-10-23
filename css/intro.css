@@ -116,11 +116,11 @@
 }
 
 .owl-carousel .owl-nav button.owl-prev {
-    background: url("/images/intro/back.png") center center no-repeat var(--color-main);
+    background: url("../images/intro/back.png") center center no-repeat var(--color-main);
 }
 
 .owl-carousel .owl-nav button.owl-next {
-    background: url("/images/intro/forward.png") center center no-repeat #F9F6E5;
+    background: url("../images/intro/forward.png") center center no-repeat #F9F6E5;
 }
 
 .owl-carousel .owl-nav button.owl-next:hover {
