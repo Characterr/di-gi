@@ -26,15 +26,12 @@
 
 .project {
    text-align: center;
-
-
    box-sizing: border-box;
    width: calc(100% / 4);
 }
 
 .project:hover .project-info {
    background: rgba(249, 246, 229, 0.83);
-
    transition: background-color var(--speed-slow);
 }
 
@@ -48,7 +45,6 @@
    margin: 0 11px 29px;
    border-radius: 5%;
    position: relative;
-
    display: flex;
    justify-content: center;
    align-items: center;
@@ -64,7 +60,6 @@
    width: calc(100% - 22px);
    border-radius: 5%;
    position: absolute;
-
    display: flex;
    justify-content: center;
    align-items: center;
@@ -105,24 +100,27 @@ button:hover {
    color: var(--color-main);
 }
 
-
 @media (max-width:1024px) {
    .projects .wrapper {
       padding: 0 180px 0 182px;
    }
-   .project-items{
+
+   .project-items {
       justify-content: space-between;
       margin: 0 -14px 80px;
    }
-.project{
-   padding: 0 14px;
-   width: calc(100% /2);
-}
- .wrap-project { 
-       min-width: 100%;
-       margin: 0 auto 30px;
+
+   .project {
+      padding: 0 14px;
+      width: calc(100% /2);
    }
-   .projects  h4{
+
+   .wrap-project {
+      min-width: 100%;
+      margin: 0 auto 30px;
+   }
+
+   .projects h4 {
       margin-bottom: 30px;
    }
 }
@@ -131,6 +129,7 @@ button:hover {
    .projects .wrapper {
       padding: 0 56px 0 53px;
    }
+
    .projects h4 {
       font-size: 20px;
       line-height: 23px;
@@ -138,25 +137,31 @@ button:hover {
 }
 
 @media (max-width:640px) {
-   .project{
+   .project {
       width: 100%;
    }
+
    .projects .wrapper {
       padding: 0 60px 0 61px;
    }
+
    .projects h2 {
       margin-top: 40px;
       margin-bottom: 20px;
    }
+
    .projects .line {
       margin-bottom: 41px;
    }
+
    .project-items {
       margin-bottom: 40px;
    }
+
    .wrap-project {
       margin-bottom: 20px;
    }
+
    .projects h4 {
       margin-bottom: 20px;
    }
@@ -166,11 +171,13 @@ button:hover {
    .projects .wrapper {
       padding: 0 17px 0 20px;
    }
+
    .projects h2 {
       font-size: 24px;
       line-height: 28px;
       margin-top: 20px;
    }
+
    .projects h4 {
       font-size: 16px;
       line-height: 19px;

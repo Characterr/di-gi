@@ -76,7 +76,8 @@
    margin-bottom: 28px;
    transition: margin var(--speed-slow);
 }
-.item img{
+
+.item img {
    width: auto;
 }
 
@@ -129,37 +130,46 @@
       display: block;
       text-align: left;
    }
+
    .content-wrapper {
       margin: 0 46px;
       width: auto;
    }
+
    .services h2 {
       text-align: center;
    }
-   .services h3{
+
+   .services h3 {
       margin-bottom: 38px;
       max-width: 100%;
    }
+
    .line {
       margin-bottom: 34px;
    }
+
    .services p {
       margin-bottom: 32px;
       max-width: 530px;
    }
+
    .items {
       margin-right: 0;
       max-width: 100%;
    }
-   .object{
+
+   .object {
       margin-bottom: 30px;
    }
+
    .item:hover {
       outline-offset: -15px;
    }
-   .item:hover .object{
+
+   .item:hover .object {
       margin-bottom: 18px;
-   } 
+   }
 }
 
 @media (max-width:768px) {
@@ -167,32 +177,41 @@
       margin-top: 42px;
       margin-bottom: 30px;
    }
-   .services h3{
+
+   .services h3 {
       margin-bottom: 32px;
    }
+
    .line {
       margin-bottom: 32px;
    }
+
    .services p {
-     margin-bottom: 27px;
+      margin-bottom: 27px;
    }
+
    .items {
       max-width: 100%;
    }
+
    .item {
       width: calc(100% / 2);
       height: 337px;
    }
+
    .object {
       margin-top: 122px;
       margin-bottom: 15px;
    }
+
    .item:hover {
       outline-offset: -27px;
    }
+
    .item:hover .description {
       margin-bottom: 18px;
    }
+
    .item:hover .object {
       margin-top: 70px;
       margin-bottom: 15px;
@@ -200,33 +219,40 @@
 }
 
 @media (max-width:640px) {
-   .content-wrapper{
+   .content-wrapper {
       text-align: center;
    }
+
    .services h2 {
       margin-top: 24px;
       margin-bottom: 12px;
    }
-   .services h3{
+
+   .services h3 {
       margin-bottom: 30px;
    }
+
    .line {
       margin: 0 auto 30px;
    }
+
    .services p {
-     margin-bottom: 40px;
+      margin-bottom: 40px;
    }
 
    .item {
-      height: 311px; 
+      height: 311px;
    }
+
    .object {
       margin-top: 98px;
-      margin-bottom: 30px; 
+      margin-bottom: 30px;
    }
-   .description{ 
-      margin: 0px 16px 40px;       
+
+   .description {
+      margin: 0px 16px 40px;
    }
+
    .item:hover {
       outline-offset: -19px;
    }
@@ -236,32 +262,38 @@
    .content-wrapper p {
       margin-bottom: 40px;
    }
+
    .services h2 {
-      order: -1; 
+      order: -1;
       margin-top: 25px;
       margin-bottom: 20px;
    }
-    .line {
+
+   .line {
       margin-bottom: 45px;
-       order: -1; 
+      order: -1;
    }
-   .services h3{
+
+   .services h3 {
       margin-bottom: 40px;
    }
+
    .services p {
-     margin-bottom: 40px;
+      margin-bottom: 40px;
    }
+
    .items {
       margin-left: 20px;
       margin-right: 20px;
       margin-bottom: 40px;
    }
+
    .item {
       width: 100%;
       height: 311px;
    }
+
    .item:hover {
       outline-offset: -16px;
    }
 }
-

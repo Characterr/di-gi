@@ -4,9 +4,10 @@
    text-align: center;
    color: #4A4A4A;
 }
-  .testimonial .wrapper{
+
+.testimonial .wrapper {
    padding: 0;
-  }
+}
 
 .quotes {
    width: 32px;
@@ -38,62 +39,74 @@ q::before {
    font-size: 24px;
    line-height: 28px;
    letter-spacing: 2px;
-   margin: 0 0 80px;
+   margin: 0 0 217px;
 }
 
-.testimonial .pagination {
-   margin-bottom: 127px;
+.testimonial .owl-nav {
+   display: none;
 }
 
-.testimonial .oval {
+.testimonial .owl-dots {
+   bottom: 127px;
+}
+
+.testimonial button.owl-dot {
    background-color: var(--color-main);
    border: 1px solid var(--color-main);
 }
 
-.testimonial .active {
+.testimonial button.active {
    background: var(--color-light);
    border-color: #476E4D;
 }
 
 @media (max-width:1024px) {
-   .testimonial .wrapper{
+   .testimonial .wrapper {
       padding: 0 41px;
    }
+
    .quotes {
       margin-bottom: 40px;
    }
+
    .quote {
       font-size: 32px;
       line-height: 38px;
       margin-bottom: 45px;
    }
+
    .author {
       font-size: 20px;
       line-height: 24px;
-      margin-bottom: 80px;
+      margin-bottom: 221px;
    }
-   .testimonial .pagination {
-      margin-bottom: 131px;
+
+   .testimonial .owl-dots {
+      bottom: 131px;
    }
 }
 
 @media (max-width:768px) {
-   .testimonial .wrapper{
+   .testimonial .wrapper {
       padding: 0 25px;
    }
+
    .quotes {
       margin-top: 60px;
       margin-bottom: 80px;
    }
+
    .quote {
       margin-bottom: 40px;
       letter-spacing: -1px;
    }
+
    .author {
-      margin-bottom: 40px;
+      margin-bottom: 136px;
    }
-   .testimonial .pagination {
-      margin-bottom: 86px;
+
+   .testimonial .owl-dots {
+      bottom: 86px;
    }
 }
 
@@ -101,12 +114,14 @@ q::before {
    .quotes {
       margin-bottom: 40px;
    }
-   .quote{
+
+   .quote {
       letter-spacing: 0;
       max-width: 413px;
       text-align: cenjter;
    }
-   .quote::first-letter{
+
+   .quote::first-letter {
       margin-left: 40px;
    }
 }
@@ -115,13 +130,15 @@ q::before {
    .quotes {
       margin-bottom: 90px;
    }
+
    .quote {
       margin-bottom: 90px;
       font-size: 24px;
       line-height: 28px;
       max-width: 294px;
    }
-   .quote::first-letter{
+
+   .quote::first-letter {
       margin: 0;
    }
 }
