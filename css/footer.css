@@ -88,6 +88,10 @@ footer p {
    margin-bottom: 22px;
 }
 
+ul {
+   list-style-type: none;
+}
+
 .footer-item a {
    color: var(--color-light);
    text-decoration: none;
@@ -251,6 +255,11 @@ footer address {
 
    .footer-items {
       margin-bottom: 130px;
+   }
+   
+   .footer-item{
+      box-sizing: border-box;
+      padding-right: 15px ; 
    }
 }
 

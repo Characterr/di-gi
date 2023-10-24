@@ -18,23 +18,15 @@
 }
 
 .owl-stage .owl-item:nth-child(1) .intro-elem {
-    background-image: url("../images/intro/bg-img.jpg");
+    background-image: url("../images/intro/bg-img2.jpg");
 }
 
 .owl-stage .owl-item:nth-child(2) .intro-elem {
-    background-image: url("../images/intro/bg-img2.jpg");
+    background-image: url("../images/intro/bg-img.jpg");
 }
 
 .owl-stage .owl-item:nth-child(3) .intro-elem {
     background-image: url("../images/intro/bg-img3.jpg");
-}
-
-.owl-stage .owl-item:nth-child(4) .intro-elem {
-    background-image: url("../images/intro/bg-img.jpg");
-}
-
-.owl-stage .owl-item:nth-child(5) .intro-elem {
-    background-image: url("../images/intro/bg-img2.jpg");
 }
 
 .intro-elem::after {
@@ -270,6 +262,11 @@
 }
 
 @media (max-width:480px) {
+    .title {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
     .owl-carousel .owl-nav {
         display: none;
     }

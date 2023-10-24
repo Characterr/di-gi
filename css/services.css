@@ -204,17 +204,25 @@
       margin-bottom: 15px;
    }
 
-   .item:hover {
+   .item:active {
+      outline: 4px solid var(--color-main);
       outline-offset: -27px;
+      z-index: -1;
    }
 
-   .item:hover .description {
+   .item:active .object {
+      margin-top: 70px;
+      margin-bottom: 15px;
+   }
+
+   .item:active .description {
+      font-size: 16px;
       margin-bottom: 18px;
    }
 
-   .item:hover .object {
-      margin-top: 70px;
-      margin-bottom: 15px;
+   .item:active a {
+      right: 0%;
+      z-index: 1;
    }
 }
 
@@ -253,7 +261,7 @@
       margin: 0px 16px 40px;
    }
 
-   .item:hover {
+   .item:active {
       outline-offset: -19px;
    }
 }
@@ -293,7 +301,7 @@
       height: 311px;
    }
 
-   .item:hover {
+   .item:active {
       outline-offset: -16px;
    }
 }

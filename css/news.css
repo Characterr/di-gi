@@ -89,7 +89,7 @@
 .news .info {
    position: absolute;
    left: calc(50% - 14px);
-   top: calc(50% - 14px);
+   top: calc(50% - 24px);
    color: #F9F6E5;
    background-image: url("../images/news/info button.png");
    border: none;
