@@ -46,7 +46,6 @@
    justify-content: flex-start;
    align-items: flex-start;
    align-content: flex-start;
-   z-index: 0;
 }
 
 .item {
@@ -68,7 +67,6 @@
 .item:hover {
    outline: 4px solid var(--color-main);
    outline-offset: -10px;
-   z-index: -1;
 }
 
 .object {
@@ -93,19 +91,20 @@
 
 .description {
    font-family: Roboto;
+   font-size: 16px;
    font-weight: 500;
    line-height: 18px;
    color: #9B9B9B;
    letter-spacing: 0;
    text-transform: none;
-   font-size: 0;
    margin: 0 13px;
-   transition: font-size var(--speed-slow);
+   opacity: 0;
+   transition: all var(--speed-slow);
 }
 
 .item:hover .description {
-   font-size: 16px;
    margin-bottom: 18px;
+   opacity: 1;
 }
 
 .item a {
@@ -115,7 +114,7 @@
    cursor: pointer;
    position: relative;
    right: 100%;
-   z-index: -5;
+   z-index: -1;
    margin-bottom: 37px;
    transition: all var(--speed-slow);
 }
@@ -204,23 +203,22 @@
       margin-bottom: 15px;
    }
 
-   .item:active {
+   .item:hover {
       outline: 4px solid var(--color-main);
       outline-offset: -27px;
-      z-index: -1;
    }
 
-   .item:active .object {
+   .item:hover .object {
       margin-top: 70px;
       margin-bottom: 15px;
    }
 
-   .item:active .description {
+   .item:hover .description {
       font-size: 16px;
       margin-bottom: 18px;
    }
 
-   .item:active a {
+   .item:hover a {
       right: 0%;
       z-index: 1;
    }
@@ -261,7 +259,7 @@
       margin: 0px 16px 40px;
    }
 
-   .item:active {
+   .item:hover {
       outline-offset: -19px;
    }
 }
@@ -301,7 +299,7 @@
       height: 311px;
    }
 
-   .item:active {
+   .item:hover {
       outline-offset: -16px;
    }
 }
